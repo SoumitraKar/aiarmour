@@ -1,0 +1,20 @@
+<div class="componentUs container-fluid">
+  <div class="componentGroup row">
+    <div class="col-12">
+      <span class="componentHeading">About</span>
+      <span class="componentMessage">As it is a big event to show your creativity,
+        so for that you have to know about Smart India Hackathon (SIH) and Hackisium.
+        So here are some basic informations.</span>
+    </div>
+  </div>
+  <div class="kpiCardContainer row">
+    <div [class]="cardClass" class = "d-flex" *ngFor = "let kpiCard of aboutUsKpi">
+      <div class="kpiCard content">
+        <span class = "kpiCardHeading">{{kpiCard.heading}}</span>
+        <div class = "kpiCardBody">
+          <span *ngFor = "let body of kpiCard.bodyList"><b>{{body.head}}</b>{{body.body}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

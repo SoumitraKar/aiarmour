@@ -1,0 +1,25 @@
+.componentUs {
+  .kpiCard {
+      div.kpiCardBody {
+        span {
+            display: block;
+            line-height: 24px;
+            padding-bottom: 8px;
+        }
+      }
+  }
+}
+@media (min-width: 768px) {
+}
+@media (max-width: 768px) {
+  .componentUs {
+    .componentGroup {
+      span.componentHeading {
+        margin: 20px 0px 16px 20px;
+      }
+      span.componentMessage {
+        margin-left: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<div class="componentUs container-fluid">
+  <div class="componentGroup row">
+    <div class="col-12">
+      <span class="componentHeading">Training & Internship</span>
+      <span class="componentMessage">Embark on a journey of growth and innovation with our comprehensive
+        virtual training and internship programs at OctaNet.
+      </span>
+      <span class="componentMessage">
+        We look forward to welcoming you to our Training and Internship Program and helping you take the next step in your career.
+      </span>
+    </div>
+  </div>
+  <div class="kpiCardContainer row">
+    <div class="{{cardClass}} d-flex" *ngFor = "let cource of courceDetails">
+      <div class="kpiCard content">
+        <img src="{{cource.icon}}" alt="Logo" width = "50">
+        <span class = "kpiCardHeading">{{cource.name}}</span>
+        <div class = "kpiCardBody">
+          {{cource.description}}
+          <table *ngIf="cource.badges && cource.badges.length>0">
+            <tr *ngFor = "let badge of cource.badges" class= "row">
+              <td class = "col-3"><span>{{badge.date}}</span><span class="subText">{{badge.days}}</span></td>
+              <td class = "col-3"><span>{{badge.type}}</span><span class="subText">{{badge.badgeType}}</span></td>
+              <td class = "col-6"><span [class] = "badge.bookingStatus">{{badge.bookingStatus}}</span><span class="subText">{{badge.timing}}</span></td>
+            </tr>
+          </table>
+        </div>
+        <button type="button" class = "apply-button">Apply Now</button>
+      </div>
+    </div>
+  </div>
+</div>
