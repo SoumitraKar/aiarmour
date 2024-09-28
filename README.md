@@ -18,4 +18,4 @@ Unit test cases are yet to be written.
 ## Originally created by
 
 Soumitra Kar<br>
-[Email for assistance](sksoumitrakar@gmail.com)
+Email for assistance : [sksoumitrakar@gmail.com](mailto:sksoumitrakar@gmail.com)
